@@ -67,7 +67,7 @@ struct ll_node *ll_get(struct ll_node *node, size_t index) {
     assert(node != NULL);
 
     struct ll_node *cur = node;
-    int ind = 0;
+    size_t ind = 0;
     while (ind < index && cur != NULL) {
 	cur = cur->next;
 	ind++;
